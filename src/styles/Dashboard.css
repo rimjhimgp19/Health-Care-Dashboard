@@ -1,0 +1,128 @@
+.dashboard-main {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: #b2c4c2;
+    overflow-y: auto;
+}
+
+.dashboard-header {
+    margin-bottom: 1.5rem;
+}
+
+.dashboard-title-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.dashboard-subtitle {
+    font-size: 0.875rem;
+    color: #53555a;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+    height: calc(100vh - 200px);
+}
+
+/* Grid Areas */
+.grid-anatomy {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.grid-health-status {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid-calendar {
+    grid-column: span 6;
+    grid-row: span 2;
+}
+
+.grid-schedule {
+    grid-column: span 8;
+    grid-row: span 1;
+}
+
+.grid-activity {
+    grid-column: span 4;
+    grid-row: span 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .dashboard-grid {
+        grid-template-columns: repeat(6, 1fr);
+        height: auto;
+    }
+
+    .grid-anatomy {
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+
+    .grid-health-status {
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+
+    .grid-calendar {
+        grid-column: span 6;
+        grid-row: span 1;
+    }
+
+    .grid-schedule {
+        grid-column: span 6;
+        grid-row: span 1;
+    }
+
+    .grid-activity {
+        grid-column: span 6;
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-main {
+        padding: 1rem;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .grid-anatomy,
+    .grid-health-status,
+    .grid-calendar,
+    .grid-schedule,
+    .grid-activity {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .dashboard-title-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+/* Card Animations */
+.dashboard-grid>div {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-grid>div:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px #0f766e; }
