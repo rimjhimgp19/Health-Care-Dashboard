@@ -3,7 +3,7 @@ export const healthStatusData = [
       id: 1,
       organ: 'Lungs',
       status: 'healthy',
-      date: 'Mon, 26 Oct 2021',
+      date: 'Mon, 26 Oct 2024',
       color: '#ff6b6b',
       percentage: 85,
       icon: '🫁'
@@ -12,7 +12,7 @@ export const healthStatusData = [
       id: 2,
       organ: 'Teeth',
       status: 'issue',
-      date: 'Mon, 26 Oct 2021',
+      date: 'Mon, 26 Oct 2024',
       color: '#4ecdc4',
       percentage: 60,
       icon: '🦷'
@@ -21,7 +21,7 @@ export const healthStatusData = [
       id: 3,
       organ: 'Bone',
       status: 'healthy',
-      date: 'Thurs, 26 Oct 2021',
+      date: 'Thurs, 26 Oct 2024',
       color: '#45b7d1',
       percentage: 90,
       icon: '🦴'
@@ -30,7 +30,7 @@ export const healthStatusData = [
         id: 4,
         organ: 'Brain',
         status: 'issue',
-        date: 'Fri, 26 Oct 2021',
+        date: 'Fri, 26 Oct 2024',
         color: '#8e44ad',
         percentage: 70,
         icon: '🧠'
