@@ -1,6 +1,6 @@
 export const calendarData = {
-    month: 'October 2021',
-    year: 2021,
+    month: 'October 2024',
+    year: 2024,
     currentWeek: 'This Week',
     days: [
       {
